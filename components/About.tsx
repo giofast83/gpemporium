@@ -17,8 +17,9 @@ const About: React.FC = () => {
           <div className="relative order-2 lg:order-1">
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-brand-gray">
               <img 
-                src="https://picsum.photos/seed/techworkspace/800/1000" 
-                alt="Spazio di lavoro professionale" 
+                src="/images/Giorgio B&amp;N.jpg" 
+                alt="Ritratto di Giorgio" 
+                loading="lazy"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
