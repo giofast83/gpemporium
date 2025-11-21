@@ -35,12 +35,12 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold tracking-tighter text-white">
+        <a href="#" aria-label="Home" className="text-2xl font-bold tracking-tighter text-white">
           GPEmporium<span className="text-brand-accent">.</span>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8" aria-label="Navigazione principale">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -56,15 +56,18 @@ const Header: React.FC = () => {
         <button
           className="md:hidden text-gray-300 hover:text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-controls="mobile-navigation"
+          aria-expanded={isMobileMenuOpen}
+          aria-label={isMobileMenuOpen ? 'Chiudi menu' : 'Apri menu'}
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
         </button>
       </div>
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-brand-dark border-b border-brand-gray shadow-xl">
-          <nav className="flex flex-col px-6 py-4 space-y-4">
+          <nav id="mobile-navigation" className="flex flex-col px-6 py-4 space-y-4" aria-label="Navigazione principale">
             {navLinks.map((link) => (
               <a
                 key={link.name}

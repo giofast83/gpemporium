@@ -60,9 +60,10 @@ const Portfolio: React.FC = () => {
                 <a 
                   href={project.link} 
                   className="inline-flex items-center text-sm font-semibold text-brand-accent hover:text-white transition-colors"
+                  aria-label={`Visita il sito: ${project.title}`}
                 >
                   Visita il sito
-                  <ExternalLink size={14} className="ml-2" />
+                  <ExternalLink size={14} className="ml-2" aria-hidden="true" />
                 </a>
               </div>
             </div>

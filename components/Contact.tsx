@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-brand-dark rounded-lg text-brand-accent border border-brand-gray">
-                  <Mail size={24} />
+                  <Mail size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-brand-dark rounded-lg text-brand-accent border border-brand-gray">
-                  <MapPin size={24} />
+                  <MapPin size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Sede</h4>
@@ -55,11 +55,11 @@ const Contact: React.FC = () => {
             <div className="mt-12">
               <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Seguimi su</h4>
               <div className="flex space-x-4">
-                <a href="#" className="p-3 bg-brand-dark rounded-full text-gray-400 hover:text-white hover:bg-brand-accent transition-all duration-300">
-                  <Linkedin size={20} />
+                <a href="#" aria-label="LinkedIn" className="p-3 bg-brand-dark rounded-full text-gray-400 hover:text-white hover:bg-brand-accent transition-all duration-300">
+                  <Linkedin size={20} aria-hidden="true" />
                 </a>
-                <a href="#" className="p-3 bg-brand-dark rounded-full text-gray-400 hover:text-white hover:bg-brand-accent transition-all duration-300">
-                  <Instagram size={20} />
+                <a href="#" aria-label="Instagram" className="p-3 bg-brand-dark rounded-full text-gray-400 hover:text-white hover:bg-brand-accent transition-all duration-300">
+                  <Instagram size={20} aria-hidden="true" />
                 </a>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
             {formStatus === 'success' ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
                 <div className="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mb-4">
-                  <Send size={32} />
+                  <Send size={32} aria-hidden="true" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Messaggio Inviato!</h3>
                 <p className="text-gray-400">Grazie per avermi contattato. Ti risponderò al più presto.</p>

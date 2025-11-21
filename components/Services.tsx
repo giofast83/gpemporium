@@ -4,17 +4,17 @@ import { Code, PenTool, BarChart3 } from 'lucide-react';
 const Services: React.FC = () => {
   const services = [
     {
-      icon: <Code size={40} />,
+      icon: <Code size={40} aria-hidden="true" />,
       title: "Web Design & Development",
       description: "Siti web moderni e performanti. Integro strumenti AI nel workflow di sviluppo per codice ottimizzato, automazioni intelligenti e soluzioni scalabili.",
     },
     {
-      icon: <PenTool size={40} />,
+      icon: <PenTool size={40} aria-hidden="true" />,
       title: "Content Creation & Branding",
       description: "Narrazione visiva e testuale potenziata dalla Generative AI. Creazione rapida di asset creativi e copy persuasivo che definiscono l'identità del brand.",
     },
     {
-      icon: <BarChart3 size={40} />,
+      icon: <BarChart3 size={40} aria-hidden="true" />,
       title: "Media Buying & Advertising",
       description: "Gestione strategica del budget pubblicitario. Utilizzo algoritmi predittivi e analisi AI-driven per massimizzare il ROI su Meta e Google.",
     },
